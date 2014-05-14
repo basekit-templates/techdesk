@@ -1,0 +1,24 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+  <header class="bk-header">
+      <div class="companyheader">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "TECHDESK"})|raw}}
+          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+       </div>
+  </header> 
+
+<div class="canvas wrapper">
+		{{zone('main')|raw}}
+</div>
+
+<footer class="bk-footer">
+	<div class="footer-border companyheader">
+		{{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile', 'refreshtime':'1800000'})|raw}}
+	</div>
+</footer>
+
+{% endblock %}

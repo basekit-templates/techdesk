@@ -1,0 +1,29 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="bk-pt-default">
+  <header class="bk-header">
+      <div class="companyheader wrapper clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "Arctic"})|raw}}
+          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+       </div>
+  </header> 
+
+<div class="canvas">
+	<div class="page-wrap">
+		<section class="section main home-page">
+				{{zone('main')|raw}}
+		</section>
+	</div>
+</div>
+
+<footer class="bk-footer">
+	<div class="footer-border page-wrap">
+		{{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile', 'refreshtime':'1800000'})|raw}}
+	</div>
+</footer>
+</div>
+
+{% endblock %}

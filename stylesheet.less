@@ -1,0 +1,313 @@
+/*
+	Table of Contents:
+	===============================
+	1. Global styles and objects
+	2. Typography
+	3. Design specific styles
+	4. Media queries
+	===============================
+*/
+
+/*	===============================
+	Style import
+	=============================== */
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+/*	===============================
+	Default page
+	=============================== */
+
+/*	===============================
+	Type
+	=============================== */
+
+
+/*	===============================
+	Globals
+	=============================== */
+
+::-moz-selection { background-color: fade(@color-swatch3, 85%); }
+::selection { background-color: fade(@color-swatch3, 85%); }
+
+body {
+	background-color: darken(@color-swatch1,3%);
+	background-size: 100% auto;
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 10%;
+}
+
+.canvas {
+	background-color: @color-swatch1;
+	-webkit-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
+	-moz-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
+	box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
+	padding-bottom:60px;
+}
+
+
+/*	===============================
+	Header
+	=============================== */
+
+.bk-header {
+	background-color:@color-swatch3;
+	padding: 30px 0px 65px;
+}
+
+.companyheader {
+	width: 90%;
+	padding: 0 5%;
+	margin: 0px auto;
+}
+
+.widget.logo {
+	float:left;
+}
+
+.companyname {
+	float:left;
+}
+
+.widget.companyname a {
+	font-weight:700;
+}
+
+/*	===============================
+	Extended Navigation
+	=============================== */
+
+.widget.extendednavigation {
+	float:right;
+	position: relative;
+	z-index: 5000;
+	background-color:@color-swatch3;
+}
+
+.widget .extendednavigation a.pull {
+	width: 26px;
+	height: 20px;
+	top:-30px;
+}
+
+.widget .extendednavigation ul li:hover ul {
+	background-color:lighten(@color-swatch3,15%);
+}
+
+.widget .extendednavigation ul li.folder:after {
+	border-top-color:lighten(@color-swatch3,15%);
+}
+
+/*	===============================
+	Blog
+	=============================== */
+
+.blog-post-feature-image-wrap {
+	background-repeat: no-repeat;
+	margin-left: -16.7%;
+	padding-left: 16.7%;
+	margin-right: -16.7%;
+	padding-right: 16.7%;
+	width: inherit;
+	img {
+		width:100%;
+	}
+}
+
+.blogpost, .blog-post-list {
+   .blog-post-feature-image-wrap {
+       line-height: 0;
+       background-size: cover;
+       background-position: center;
+       width: auto;
+       img {
+           display: none;
+       }
+   }
+}
+
+.blog-post-list .blog-post-feature-image-wrap {
+   height: 250px;
+}
+
+.blogpost .blog-post-feature-image-wrap {
+   height: 350px;
+}
+
+.blog-post-title {
+	padding-top:60px;
+}
+
+.blog-post-item.has-image {
+	padding-bottom:60px;
+}
+
+/*	===============================
+	Menu
+	=============================== */
+
+.dietary-icon {
+	border:1px solid @color-swatch5!important;
+	padding:5px;
+}
+
+.menu-item-promoted {
+	background-color: darken(@color-swatch1,3%);
+	padding:20px!important;
+}
+
+.menu-subsection-wrapper.menu-subsection-promoted {
+	background-color: darken(@color-swatch1,3%);
+	padding:40px;
+}
+
+.main.wrapper {
+	width:100%;
+}
+
+/*	===============================
+	Bootstrap Modifications
+	=============================== */
+
+input, textarea {
+	border:0;
+	background-color: darken(@color-swatch1,3%);
+}
+
+.widget.profile form fieldset input {
+	background-color: darken(@color-swatch1,3%);
+}
+
+.widget.profile form button {
+	padding: 7px 14px 11px;
+}
+
+.signupform fieldset button {
+	padding: 10px 14px 14px 14px;
+}
+
+.blog-search-submit-button {
+	padding:4px 14px 8px 14px;
+	background-color:@color-swatch3;
+	border:0;
+	margin-bottom:10px;
+	font-family:@font-swatch7-font-family; 
+	font-weight: @font-swatch7-font-weight; 
+	color:@font-swatch7-color; 
+	line-height:@font-swatch7-line-height; 
+	letter-spacing: @font-swatch7-letter-spacing; 
+	font-size: @font-swatch7-font-size;
+		&:hover {
+		background-color: lighten(@color-swatch7,10%);
+		border: none;
+	}
+}
+
+.widget.button button {
+	&:hover{
+		background-color:lighten(@color-swatch3,5%);
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	height:50px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
+	padding:5px;
+	background-color:#ddd;
+}
+
+/*	===============================
+	Ecom
+	=============================== */
+.widget.ecomcheckout .delivery select {
+	-webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: darken(@color-swatch1,3%);
+    background-position-x: 98%;
+    background-position-y: 53%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    appearance: none;
+    outline: none !important;
+    -moz-outline-style: none;
+    border: 1px solid @color-swatch5, 25%;
+    position: relative;
+    background: transparent;
+    padding: 10px 23px 10px 10px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-image: image('/images/arrow.png');
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    border: 0;
+    background-color: darken(@color-swatch1,3%);
+    background-position-x: 95%;
+    background-position-y: 53%;
+}
+
+/*	===============================
+	Footer
+	=============================== */
+
+.bk-footer {
+	background-color: @color-swatch3;
+	padding: 30px 0px;
+}
+
+.widget.profile {
+	margin: 0px auto;
+	display: table;
+	color:@font-swatch7-color;
+}
+
+.widget.profile p, .widget.profile a {
+	color:@font-swatch7-color;
+}
+
+footer .widget.profile .bk-profile-socialicons span a {
+	background-color:@color-swatch3;
+}
+
+/*	===============================
+	Media queries
+	=============================== */
+@media only screen and (max-width: 768px) {
+	.widget .extendednavigation ul li {
+		border:0;
+	}
+	.widget.extendednavigation {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+}
