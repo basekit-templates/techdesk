@@ -1,25 +1,8 @@
-/*
-	Table of Contents:
-	===============================
-	1. Global styles and objects
-	2. Typography
-	3. Design specific styles
-	4. Media queries
-	===============================
-*/
 
 /*	===============================
 	Style import
 	=============================== */
 @import "@{templateCommon}/basekit-bootstrap.less";
-
-/*	===============================
-	Default page
-	=============================== */
-
-/*	===============================
-	Type
-	=============================== */
 
 
 /*	===============================
@@ -309,5 +292,21 @@ footer .widget.profile .bk-profile-socialicons span a {
 }
 
 @media only screen and (max-width: 480px) {
-
+	.search-term {
+		display:block;
+	}
+	.blog-search-input {
+		width:65%;
+	}
+	.menu-subsection-header h2, .ecom-productlist-info h2 {
+		font-size: bkscale(@font-swatch2-font-size, 0.7);
+        line-height: bkscale(@font-swatch2-line-height, 0.7);
+	}
+	.widget.ecomcheckout table tr td .checkout-quantitybtn span {
+		width: 30px;
+	}
+	.widget.ecomcheckout table tr td .checkout-quantitybtn button {
+		width: 35px;
+		height: 35px;
+	}
 }
