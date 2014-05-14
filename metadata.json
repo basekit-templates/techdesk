@@ -1,13 +1,13 @@
 {
 	"name":"Techdesk",
-	"thumbnail":"arctic.png",
-	"screenshot":"arctic.png",
+	"thumbnail":"techdesk.png",
+	"screenshot":"techdesk.png",
         "pageTypes": [
         "home",
         "default"
     ],
     "tags": {
-    "en": ["clean", "nature", "white", "modern", "blog", "professional", "simple", "arctic", "winter", "snow", "sans serif"],
+    "en": ["clean", "technology", "white", "modern", "blog", "professional", "simple", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
     "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
     },

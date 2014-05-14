@@ -33,7 +33,8 @@ body {
 	-webkit-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
 	-moz-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
 	box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
-	padding-bottom:60px;
+	padding-bottom: 40px;
+	padding-top: 60px;
 }
 
 
@@ -133,6 +134,14 @@ body {
 	padding-bottom:60px;
 }
 
+.blog-search-input {
+	width:40%;
+}
+
+.blog-search-form {
+	padding:20px 0px;
+}
+
 /*	===============================
 	Menu
 	=============================== */
@@ -207,6 +216,10 @@ input, textarea {
 .widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
 	padding:5px;
 	background-color:#ddd;
+}
+
+.signupform fieldset input {
+	width:50%;
 }
 
 /*	===============================
@@ -289,6 +302,14 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget.extendednavigation {
 		width:100%;
 	}
+	.widget.extendednavigation .bk-overlay {
+		width: 40px!important;
+		left: inherit !important;
+		top: -40px!important;
+	}
+	.widget .extendednavigation ul {
+		padding-top:30px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -296,7 +317,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 		display:block;
 	}
 	.blog-search-input {
-		width:65%;
+		width:60%;
 	}
 	.menu-subsection-header h2, .ecom-productlist-info h2 {
 		font-size: bkscale(@font-swatch2-font-size, 0.7);
@@ -308,5 +329,11 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget.ecomcheckout table tr td .checkout-quantitybtn button {
 		width: 35px;
 		height: 35px;
+	}
+	.blog-post-item.has-image {
+		padding-bottom: 20px;
+	}
+	.blog-post-title {
+		padding-top: 20px;
 	}
 }
