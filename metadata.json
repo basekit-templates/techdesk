@@ -2,6 +2,7 @@
 	"name":"Techdesk",
 	"thumbnail":"techdesk.png",
 	"screenshot":"techdesk.png",
+	"templateType":"blog",
         "pageTypes": [
         "home",
         "default"
