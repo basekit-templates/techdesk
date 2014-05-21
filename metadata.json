@@ -63,7 +63,7 @@
        "title": "Monserrat",
         "font1": {
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
-            "font-size": "32px",
+            "font-size": "28px",
             "font-weight": "400",
             "line-height": "38px",
             "color": "@color-swatch4",
@@ -71,7 +71,7 @@
         },
         "font2": {
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
-            "font-size": "34px",
+            "font-size": "32px",
             "font-weight": "700",
             "line-height": "42px",
             "color": "@color-swatch4",
