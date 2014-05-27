@@ -38,6 +38,19 @@ body {
 }
 
 
+@media only screen and (max-width: 580px) {
+	.responsivecolumns .columns-three-left, .columns-three-33-34-33 .columns-three-left,
+	.responsivecolumns .columns-three-middle, .columns-three-33-34-33 .columns-three-middle,
+	.responsivecolumns .columns-three-right, .columns-three-33-34-33 .columns-three-right {
+		width: 100%;
+	}
+	.wrapper {
+		width:90%;
+		padding:0 5%;
+	}
+}
+
+
 /*	===============================
 	Header
 	=============================== */
@@ -55,7 +68,7 @@ body {
 
 .widget.logo {
 	float:left;
-	margin-right:10px;
+	margin-right:10px!important;
 }
 
 .companyname {
@@ -247,7 +260,7 @@ input, textarea {
 	letter-spacing: @font-swatch7-letter-spacing; 
 	font-size: @font-swatch7-font-size;
 		&:hover {
-		background-color: lighten(@color-swatch7,10%);
+		background-color: lighten(@color-swatch7,15%);
 		border: none;
 	}
 }
@@ -443,4 +456,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 		width: 20%;
 		left: 42%;
 	}
+	.wrapper {
+		width: 90%;
+		padding: 0 5%;
+	}	
 }
