@@ -38,19 +38,6 @@ body {
 }
 
 
-@media only screen and (max-width: 580px) {
-	.responsivecolumns .columns-three-left, .columns-three-33-34-33 .columns-three-left,
-	.responsivecolumns .columns-three-middle, .columns-three-33-34-33 .columns-three-middle,
-	.responsivecolumns .columns-three-right, .columns-three-33-34-33 .columns-three-right {
-		width: 100%;
-	}
-	.wrapper {
-		width:90%;
-		padding:0 5%;
-	}
-}
-
-
 /*	===============================
 	Header
 	=============================== */
@@ -68,7 +55,7 @@ body {
 
 .widget.logo {
 	float:left;
-	margin-right:10px!important;
+	margin-right:5px!important;
 }
 
 .companyname {
@@ -285,7 +272,7 @@ input, textarea {
 }
 
 .widget.tweet {
-	margin:10px 0px;
+	margin:17px 0px;
 }
 
 time {
@@ -393,6 +380,19 @@ footer .widget.profile .bk-profile-socialicons span a {
 /*	===============================
 	Media queries
 	=============================== */
+
+@media only screen and (max-width: 580px) {
+	.responsivecolumns .columns-three-left, .columns-three-33-34-33 .columns-three-left,
+	.responsivecolumns .columns-three-middle, .columns-three-33-34-33 .columns-three-middle,
+	.responsivecolumns .columns-three-right, .columns-three-33-34-33 .columns-three-right {
+		width: 100%;
+	}
+	.wrapper {
+		width:90%;
+		padding:0 5%;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.widget .extendednavigation ul li {
 		border:0;
@@ -417,6 +417,13 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget.responsiveslideshow .slideshow-widget .btn-play {
 		width: 12%;
 		left: 44%;
+	}
+	.wrapper {
+		width: 90%;
+		padding: 0 5%;
+	}
+	.signupform fieldset input {
+		width: 86%;
 	}
 
 }
@@ -460,4 +467,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 		width: 90%;
 		padding: 0 5%;
 	}	
+	.signupform fieldset input {
+		width: 76%;
+	}
 }
