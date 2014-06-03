@@ -7,7 +7,7 @@
       <div class="companyheader">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "TECHDESK"})|raw}}
-          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+          	{{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
        </div>
   </header> 
 
@@ -16,9 +16,9 @@
 </div>
 
 <footer class="bk-footer">
-	<div class="footer-border companyheader">
-		{{widget('profile', 'socialicons', { 'profileType' : 'socialicons' })|raw}}
-	</div>
+	   <div class="footer-border companyheader">
+		    {{widget('profile', 'socialicons', { 'profileType' : 'socialicons' })|raw}}
+	   </div>
 </footer>
 
 {% endblock %}
