@@ -55,17 +55,22 @@ body {
 }
 
 .widget.logo {
-	float:left;
 	margin-right:5px!important;
+	display: inline-block;
 }
 
 .companyname {
-	float:left;
 	z-index: 99999;
+	display: inline-block;
 }
 
 .widget.companyname a {
 	font-weight:700;
+}
+
+.widget.companyname {
+	display:inline-block;
+	width: 20%;
 }
 
 /*	===============================
@@ -76,6 +81,9 @@ body {
 	position: relative;
 	z-index: 5000;
 	background-color:@color-swatch3;
+	display: inline-block;
+	vertical-align: middle;
+	width: 75%;
 }
 
 .widget .extendednavigation ul li:hover ul {
@@ -545,7 +553,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget .extendednavigation a.pull {
 		width: 26px;
 		height: 20px;
-		top:10px;
+		top: -34px;
 	}
 
 }
