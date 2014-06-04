@@ -42,35 +42,42 @@ body {
 	Header
 	=============================== */
 
-.bk-header {
+header.bk-header {
 	background-color:@color-swatch3;
-	min-height: 90px;
+	padding: 25px 0px 25px;
 }
 
-.companyheader {
-	width: 90%;
-	padding: 0 5%;
-	margin: 0px auto;
-	padding-top: 25px;
-}
-
-.widget.logo {
-	margin-right:5px!important;
-	display: inline-block;
-}
-
-.companyname {
-	z-index: 99999;
-	display: inline-block;
-}
-
-.widget.companyname a {
-	font-weight:700;
+.widget {
+	&.logo, &.companyname {
+		display: inline-block;
+	}
+	&.logo img {
+		vertical-align: bottom;
+	}
 }
 
 .widget.companyname {
-	display:inline-block;
-	width: 20%;
+	margin-left: 5px;
+	@media @tablet {
+		margin-right: 35px;
+	}
+}
+
+.widget.companyname a {
+	font-weight: 700;
+}
+
+.logo-container {
+	display: inline-block;
+	width: 35%;
+	@media only screen and (max-width: 900px) {
+		width: 100%;
+	}
+}
+
+.companyheader {
+	width: 80%;
+	margin: 0 10%;
 }
 
 /*	===============================
@@ -78,12 +85,23 @@ body {
 	=============================== */
 
 .widget.extendednavigation {
-	position: relative;
-	z-index: 5000;
-	background-color:@color-swatch3;
 	display: inline-block;
-	vertical-align: middle;
-	width: 75%;
+	position: relative;
+	width: 64%;
+	vertical-align: bottom;
+	@media only screen and (max-width: 900px) {
+		display: block;
+		margin-top: 15px;
+		width: 100%;
+	}
+	@media @tablet {
+		margin-top: 0;
+	}
+	ul {
+		@media only screen and (max-width: 900px) {
+			float: none;
+		}
+	}
 }
 
 .widget .extendednavigation ul li:hover ul {
@@ -553,7 +571,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget .extendednavigation a.pull {
 		width: 26px;
 		height: 20px;
-		top: -34px;
+		top: -28px;
 	}
 
 }
