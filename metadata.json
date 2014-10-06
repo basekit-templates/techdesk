@@ -3,10 +3,7 @@
 	"thumbnail":"techdesk.png",
 	"screenshot":"techdesk.png",
 	"templateType":"blog",
-        "pageTypes": [
-        "home",
-        "default"
-    ],
+        
     "tags": {
     "en": ["clean", "technology", "white", "modern", "blog", "professional", "simple", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
