@@ -31,12 +31,21 @@ body {
 .canvas {
 	background-color: @color-swatch1;
 	-webkit-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
-	-moz-box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
-	box-shadow: 0px 4px 5px 1px rgba(237,237,237,1);
+	-moz-box-shadow: 	0px 4px 5px 1px rgba(237,237,237,1);
+	box-shadow: 		0px 4px 5px 1px rgba(237,237,237,1);
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
 
+label {
+	margin: 10px 0;
+}
+
+.btn {
+	&:hover {
+		background-color:lighten(@color-swatch3,5%);
+	}
+}
 
 /*	===============================
 	Header
@@ -116,7 +125,8 @@ header.bk-header {
 	padding: 5px 20px;
 }
 
-.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+.widget .extendednavigation > ul > li > a, 
+.widget .extendednavigation ul li.folder > .text {
 	padding:5px 20px;
 }
 
@@ -179,6 +189,22 @@ header.bk-header {
 	padding:20px 0px;
 }
 
+.blog-post-sharing {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid lighten(@color-swatch7,90);
+	.btn {
+		&:hover {
+			background-color:lighten(@color-swatch3,5%);
+		}
+	}
+}
+
+.blog-post-category,
+.blog-post-tags {
+	margin-top: 10px;
+}
+
 /*	===============================
 	Menu
 	=============================== */
@@ -186,6 +212,7 @@ header.bk-header {
 .dietary-icon {
 	border:1px solid @color-swatch5!important;
 	padding:5px;
+	color: @font-swatch1-color;
 }
 
 .menu-item-promoted {
@@ -238,6 +265,7 @@ header.bk-header {
 input, textarea {
 	border:0;
 	background-color: darken(@color-swatch1,3%);
+	text-indent: 5px;
 }
 
 .widget.profile form fieldset input {
@@ -264,7 +292,7 @@ input, textarea {
 	letter-spacing: @font-swatch7-letter-spacing; 
 	font-size: @font-swatch7-font-size;
 		&:hover {
-		background-color: lighten(@color-swatch7,15%);
+		background-color:lighten(@color-swatch3,5%);
 		border: none;
 	}
 }
@@ -279,7 +307,8 @@ input, textarea {
 	height:50px;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
 	padding:5px;
 	background-color:#ddd;
 }
@@ -296,7 +325,8 @@ time {
 	font-size:1em;
 }
 
-.widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
+.widget.responsiveslideshow .title, 
+.widget.responsiveslideshow .description {
 	color:@font-swatch5-color;
 }
 
@@ -362,8 +392,22 @@ select::-ms-expand {
    text-overflow: '';
 }
 
-.ecom-featuredproducts-wrap h2, .ecom-productslist-product h2, .ecom-product h2 {
+.ecom-featuredproducts-wrap h2, 
+.ecom-productslist-product h2, 
+.ecom-product h2 {
 	font-size:@font-swatch3-font-size;
+}
+
+.productlist-search .btn {
+	padding: 4px 14px 7px;
+	&:hover {
+		background-color:lighten(@color-swatch3,5%);
+		border: none;
+	}
+}
+
+.form-group label {
+	display: block;
 }
 
 /* ===============================
@@ -496,7 +540,6 @@ select::-ms-expand {
 
 .bk-footer {
 	background-color: @color-swatch3;
-	padding: 30px 0px;
 }
 
 .widget.profile {
@@ -548,7 +591,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.widget .extendednavigation ul {
 		padding-top:0;
 	}
-	.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+	.widget .extendednavigation > ul > li > a, 
+	.widget .extendednavigation ul li.folder > .text {
 		padding:0 20px;
 	}
 	select {
@@ -583,7 +627,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.blog-search-input {
 		width:60%;
 	}
-	.menu-subsection-header h2, .ecom-productlist-info h2 {
+	.menu-subsection-header h2, 
+	.ecom-productlist-info h2 {
 		font-size: bkscale(@font-swatch2-font-size, 0.7);
         line-height: bkscale(@font-swatch2-line-height, 0.7);
 	}
