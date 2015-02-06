@@ -251,6 +251,13 @@ header.bk-header {
 	font-weight:@font-swatch1-font-weight;
 }
 
+.menu-item-name h3,
+.menu-item-price p {
+	font-size:@font-swatch3-font-size;
+	font-weight:@font-swatch3-font-weight;
+	color: @font-swatch3-color;
+}
+
 .dietary-icon {
 	padding: 5px 5px 3px 5px;
 }
@@ -613,10 +620,6 @@ input, textarea {
 	background-color: darken(@color-swatch1,3%);
 }
 
-.widget.profile form button {
-	padding: 9px 14px;
-}
-
 .signupform fieldset button {
 	padding: 10px 14px 14px 14px;
 	margin-left: -3px;
@@ -626,7 +629,7 @@ input, textarea {
 }
 
 .blog-search-submit-button {
-	padding:4px 14px 8px 14px;
+	padding:6px 14px;
 	background-color:@color-swatch3;
 	border:0;
 	margin-bottom:10px;
@@ -668,6 +671,10 @@ time {
 
 textarea.message {
 	height:150px;
+}
+
+.twitter-content a {
+	font-size: @font-swatch3-font-size;
 }
 
 // Ecommerce Selects
@@ -871,9 +878,35 @@ select::-ms-expand {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+    		font-size: 0;
+    		text-indent: -99999px;
+    		position: absolute;
+    		cursor: pointer;
+    		z-index: 12;
+    		width: 60px;
+    		height: 60px;
+    		top: -4%;
+    		left: 0;
+    		right: 0;
+    		bottom: 0;
+    		margin: auto;
+    		@media @mobile {
+        		width: 30px;
+        		height: 30px;
+    		}
             &:after {
                 color: #fff;
-                top: 5px;
+				content: "II";
+				text-indent: 0;
+				font-size: 30px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+				line-height: 62px;
+				font-size:20px;
             }
         }
     }
@@ -890,43 +923,6 @@ select::-ms-expand {
             }
         }
     }
-}
-
-.widget.responsiveslideshow .btn-play:after {
-    font-size:20px;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-    background: rgba(0,0,0,0.5);
-    font-size: 0;
-    text-indent: -99999px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 12;
-    width: 60px;
-    height: 60px;
-    top: -4%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    @media @mobile {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.widget.responsiveslideshow .btn-play:after {
-	content: "II";
-	text-indent: 0;
-	font-size: 30px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-weight: bold;
-	line-height: 62px;
 }
 
 /*	===============================
@@ -949,7 +945,7 @@ select::-ms-expand {
 	form button {
 		background-color: darken(@color-swatch1,70%);
 		color: @font-swatch7-color;
-		padding: 7px 14px 11px;
+		padding: 10px 14px;
 		&:hover {
 			background-color: darken(@color-swatch1,60%);
 		}
@@ -997,7 +993,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.widget.extendednavigation .bk-overlay {
 		left: inherit !important;
-		top: -40px;
+		top: -40px!important;
 	}
 	.widget .extendednavigation ul {
 		padding-top:0;
