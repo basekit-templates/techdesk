@@ -367,20 +367,6 @@ select {
   clear: both;
 }
 
-@media (max-width: 768px) {
-  .productlist-display-form .form-group {
-    float: none;
-    width: 100%;
-    padding: 0;
-
-  }
-  .form-group.productlist-search button {
-    margin-left: -4px;
-    width: 25%;
-  }
-
-}
-
 .widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
   text-align: left;
 }
@@ -394,10 +380,20 @@ select {
 
 .widget.ecomproduct .ecom-product .ecom-product-cattag {
   clear:both;
+  padding-top: 20px;
 }
 
 .widget.ecomproduct .ecom-product .btn {
-	margin: 20px 0 10px;
+	margin: 20px 0 0;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-long-description {
+	width: 41%;
+	display: inline-block;
+	margin-top: 20px;
+	@media @tablet {
+		width: 100%;
+	}
 }
 
 // Basket Summary
@@ -570,7 +566,7 @@ select {
     &:disabled {
       opacity: 0.2;
       &:hover {
-        background-color: @color-swatch1;
+        background-color: @color-swatch3;
       }
     }
   }
@@ -878,6 +874,7 @@ select::-ms-expand {
 
 .bk-footer {
 	background-color: @color-swatch3;
+	padding: 20px 0px;
 }
 
 .widget.profile {
@@ -885,6 +882,17 @@ select::-ms-expand {
 	display: table;
 	color:@font-swatch7-color;
 	width:inherit;
+	form, .bk-profile-socialicons {
+		margin: 0;
+	}
+	form button {
+		background-color: darken(@color-swatch1,80%);
+		color: @font-swatch1-color;
+		padding: 7px 14px 11px;
+		&:hover {
+			background-color: darken(@color-swatch1,60%);
+		}
+	}
 }
 
 .widget.profile p, .widget.profile a {
@@ -927,8 +935,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 		width:100%;
 	}
 	.widget.extendednavigation .bk-overlay {
-		width: 100%!important;
 		left: inherit !important;
+		top: -40px;
 	}
 	.widget .extendednavigation ul {
 		padding-top:0;
