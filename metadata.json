@@ -27,7 +27,7 @@
             "color4":"#000000",
             "color5":"#3c4a55",
             "color6":"#841c2f",
-            "color7":"#ffffff"
+            "color7":"#000000"
         },
         "Swatch 3": {
             "color1":"#ffffff",
@@ -36,7 +36,7 @@
             "color4":"#000000",
             "color5":"#3c4a55",
             "color6":"#4F7391",
-            "color7":"#ffffff"
+            "color7":"#000000"
         },
         "Swatch 4": {
             "color1":"#ffffff",
@@ -45,7 +45,7 @@
             "color4":"#000000",
             "color5":"#757575",
             "color6":"#73AD5C",
-            "color7":"#ffffff"
+            "color7":"#000000"
         },
         "Swatch 5": {
             "color1":"#ffffff",
@@ -54,7 +54,7 @@
             "color4":"#000000",
             "color5":"#3c4a55",
             "color6":"#4BA5A1",
-            "color7":"#ffffff"
+            "color7":"#000000"
         }
     },
     "fontSwatch": {
@@ -76,7 +76,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
@@ -92,7 +92,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Myriad pro\", Helvetica, Verdana, sans-serif",
+            "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "15px",
             "font-weight": "400",
             "line-height": "26px",

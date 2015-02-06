@@ -206,6 +206,16 @@ header.bk-header {
 	margin-top: 10px;
 }
 
+.blog-list-footer a {
+	background-color: @color-swatch3;
+	padding: 10px;
+	color: @font-swatch7-color;
+	text-decoration: none;
+	&:hover {
+		background-color:lighten(@color-swatch3,5%);
+	}
+}
+
 /*	===============================
 	Menu
 	=============================== */
@@ -235,7 +245,8 @@ header.bk-header {
 	margin: 0;
 }
 
-.menu-subsection h2 {
+.menu-subsection h2,
+.menu-item-price p {
 	font-size:@font-swatch1-font-size;
 	font-weight:@font-swatch1-font-weight;
 }
@@ -300,6 +311,10 @@ header.bk-header {
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
     padding: 10px 5px 10px 0;
     margin: 0 5px 0 0;
+    @media @tablet {
+    	margin: 0;
+    	padding: 0;
+    }
 }
 
 .productlist-display-form .form-group {
@@ -322,6 +337,7 @@ header.bk-header {
     margin-right: 0;
     box-sizing: border-box;
     height: 45px;
+    min-width: 200px;
   }
   button {
     position: relative;
@@ -603,6 +619,10 @@ input, textarea {
 
 .signupform fieldset button {
 	padding: 10px 14px 14px 14px;
+	margin-left: -3px;
+	@media @mobile {
+		margin-left: 0;
+	}
 }
 
 .blog-search-submit-button {
@@ -626,10 +646,6 @@ input, textarea {
 	&:hover{
 		background-color:lighten(@color-swatch3,5%);
 	}
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-	height:50px;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev, 
@@ -736,6 +752,51 @@ select::-ms-expand {
 
 .ecom-product-variation select {
 	   background-image: none;
+}
+
+/* ===============================
+   Gallery
+   =============================== */
+
+.widget.gallery ul li span.inner {
+    .title {
+        color: @color-swatch1;
+        font-weight: @font-swatch3-font-weight;
+        font-size: bkscale(@font-swatch4-font-size, 1.1);
+        margin-bottom: 0.3em;
+    }
+    .description {
+        color: @color-swatch1;
+    }
+}
+
+.widget.gallery .inner .image-data {
+    background: fade(@color-swatch4, 65%);
+    display: block;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.widget.gallery .inner:hover .image-data {
+    .transition( opacity, 0.5s, ease );
+    opacity: 1;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
 }
 
 /* ===============================
@@ -886,8 +947,8 @@ select::-ms-expand {
 		margin: 0;
 	}
 	form button {
-		background-color: darken(@color-swatch1,80%);
-		color: @font-swatch1-color;
+		background-color: darken(@color-swatch1,70%);
+		color: @font-swatch7-color;
 		padding: 7px 14px 11px;
 		&:hover {
 			background-color: darken(@color-swatch1,60%);
@@ -948,10 +1009,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 	select {
 		width:100%;
 	}
-	.widget.responsiveslideshow .slideshow-widget .btn-play {
-		width: 12%;
-		left: 44%;
-	}
 	.wrapper {
 		width: 90%;
 		padding: 30px 5%;
@@ -1002,19 +1059,11 @@ footer .widget.profile .bk-profile-socialicons span a {
 	.signupform fieldset input {
 		width: 68%;
 	}
-	.widget.responsiveslideshow .slideshow-widget .btn-play {
-		width: 20%;
-		left: 42%;
-	}
 	.wrapper {
 		width: 90%;
 		padding: 30px 5%;
 	}	
 	.signupform fieldset input {
 		width: 76%;
-	}
-	.widget.responsiveslideshow .slideshow-widget .btn-play {
-		width: 15%;
-		left: 0%;
 	}
 }
