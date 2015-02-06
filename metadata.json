@@ -3,7 +3,7 @@
 	"thumbnail":"techdesk.png",
 	"screenshot":"techdesk.png",
 	"templateType":"blog",
-        
+    "pageTypes":["home"],
     "tags": {
     "en": ["clean", "technology", "white", "modern", "blog", "professional", "simple", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
@@ -16,7 +16,7 @@
             "color2":"#aaaaaa",
             "color3":"#232323",
             "color4":"#000000",
-            "color5":"#aaaaaa",
+            "color5":"#8B8B8B",
             "color6":"#000000",
             "color7":"#000000"
         },
@@ -63,7 +63,7 @@
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "28px",
             "font-weight": "400",
-            "line-height": "38px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -71,7 +71,7 @@
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
-            "line-height": "42px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
