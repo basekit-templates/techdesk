@@ -12,13 +12,13 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
+            "color1":"#f7f7f7",
             "color2":"#aaaaaa",
             "color3":"#232323",
             "color4":"#000000",
             "color5":"#8B8B8B",
             "color6":"#000000",
-            "color7":"#000000"
+            "color7":"#ffffff"
         },
         "Swatch 2": {
             "color1":"#ffffff",
@@ -104,7 +104,7 @@
             "font-size": "16px",
             "font-weight": "700",
             "line-height": "30px",
-            "color": "lighten(@color-swatch3,40%)",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit",
             "color-hover": "@color-swatch1",
             "background-color": "@color-swatch7",
