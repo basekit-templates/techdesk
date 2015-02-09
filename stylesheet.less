@@ -299,6 +299,9 @@ header.bk-header {
     .form-group {
         width: auto;
         box-sizing: border-box;
+        @media @mobile {
+        	width: 100%;
+        }
         label {
             display: block;
             padding-bottom: .4em;
@@ -356,6 +359,9 @@ header.bk-header {
     left: -6px;
     height: 45px;
     vertical-align: top;
+    @media @mobile {
+    	left:0;
+    }
   }
 }
 
