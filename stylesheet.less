@@ -897,8 +897,8 @@ select::-ms-expand {
     		bottom: 0;
     		margin: auto;
     		@media @mobile {
-        		width: 30px;
-        		height: 30px;
+        		width: 40px;
+        		height: 40px;
     		}
             &:after {
                 color: #fff;
@@ -913,6 +913,9 @@ select::-ms-expand {
 				font-weight: bold;
 				line-height: 62px;
 				font-size:20px;
+				@media @mobile {
+					top: -10px;
+				}
             }
         }
     }
