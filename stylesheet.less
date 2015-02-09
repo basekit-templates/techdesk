@@ -4,6 +4,13 @@
 	=============================== */
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+.transition (@prop: all, @time: 0.5s, @ease: ease) {
+-webkit-transition: @prop @time @ease;  
+-moz-transition:    @prop @time @ease;
+-ms-transition:     @prop @time @ease; 
+-o-transition:      @prop @time @ease;  
+}
+
 
 /*	===============================
 	Globals
@@ -71,10 +78,6 @@ header.bk-header {
 	@media @tablet {
 		margin-right: 35px;
 	}
-}
-
-.widget.companyname a {
-	font-weight: 700;
 }
 
 .logo-container {
@@ -227,7 +230,7 @@ header.bk-header {
 
 .dietary-icon {
 	border:1px solid @color-swatch5!important;
-	padding:5px;
+	padding: 5px 5px 3px 5px;
 	color: @font-swatch1-color;
 }
 
@@ -261,10 +264,6 @@ header.bk-header {
 	font-size:@font-swatch3-font-size;
 	font-weight:@font-swatch3-font-weight;
 	color: @font-swatch3-color;
-}
-
-.dietary-icon {
-	padding: 5px 5px 3px 5px;
 }
 
 .menu-item-image-wrap {
@@ -409,7 +408,7 @@ select {
   margin: 10px 0;
   float: left;
   padding: 0 12px;
-  font-weight: 600;
+  font-weight: @font-swatch7-font-weight;
 }
 
 .widget.ecomproduct .ecom-product .ecom-product-cattag {
@@ -516,8 +515,8 @@ select {
     // Heading Row
     tr:first-child {
       outline: 1px solid darken(@color-swatch1,10%);
-          background-color: darken(@color-swatch1,4%);
-          -webkit-border-top-left-radius: 4px;
+      background-color: darken(@color-swatch1,4%);
+      -webkit-border-top-left-radius: 4px;
       -webkit-border-top-right-radius: 4px;
       -moz-border-radius-topleft: 4px;
       -moz-border-radius-topright: 4px;
@@ -739,11 +738,11 @@ select {
 select::-ms-expand {
    display: none;
 }
+
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
    select {
    -moz-appearance: none;
-   text-indent: 0.01px
-   ;
+   text-indent: 0.01px;
    text-overflow: '';
 }
 
@@ -967,16 +966,17 @@ select::-ms-expand {
 	}
 }
 
-.widget.profile p, .widget.profile a {
-	color:@font-swatch7-color;
+.widget.profile p, 
+.widget.profile a {
+	color: @font-swatch7-color;
 }
 
 footer .widget.profile .bk-profile-socialicons span a {
-	background-color:@color-swatch3;
+	background-color: @color-swatch3;
 }
 
 .footer-border {
-	text-align:center;
+	text-align: center;
 }
 
 .bk-profile-address {
@@ -988,9 +988,12 @@ footer .widget.profile .bk-profile-socialicons span a {
 	=============================== */
 
 @media only screen and (max-width: 580px) {
-	.responsivecolumns .columns-three-left, .columns-three-33-34-33 .columns-three-left,
-	.responsivecolumns .columns-three-middle, .columns-three-33-34-33 .columns-three-middle,
-	.responsivecolumns .columns-three-right, .columns-three-33-34-33 .columns-three-right {
+	.responsivecolumns .columns-three-left,
+	.columns-three-33-34-33 .columns-three-left,
+	.responsivecolumns .columns-three-middle, 
+	.columns-three-33-34-33 .columns-three-middle,
+	.responsivecolumns .columns-three-right, 
+	.columns-three-33-34-33 .columns-three-right {
 		width: 100%;
 	}
 	.wrapper {
