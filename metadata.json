@@ -1,7 +1,7 @@
 {
 	"name":"Techdesk",
 	"thumbnail":"techdesk.png",
-	"screenshot":"techdesk.png",
+	"screenshot" : "techdesk-screenshot.jpg",
 	"templateType":"blog",
     "pageTypes":["home"],
     "tags": {
