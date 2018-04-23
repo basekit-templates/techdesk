@@ -18,9 +18,6 @@
 	Globals
 	=============================== */
 
-::-moz-selection { background-color: fade(@color-swatch3, 85%); }
-::selection { background-color: fade(@color-swatch3, 85%); }
-
 body {
 	background-color: @color-swatch1;
 	background-size: 100% auto;
@@ -61,6 +58,10 @@ label {
 	&:hover {
 		background-color:lighten(@color-swatch3,5%);
 	}
+}
+
+.widget.content a {
+	color: @color-swatch4;
 }
 
 
