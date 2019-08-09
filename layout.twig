@@ -28,11 +28,11 @@
 
 	{% include basekit.headScript %}
 </head>
-<body class="{{ page.backgroundClass }}">
+<body class="{{ page.backgroundClass }}" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
 	{% block content %}
 	{% endblock %}
-	 
+
 	{% include basekit.bodyScript %}
 	<script type="text/javascript">
 		! function () {
