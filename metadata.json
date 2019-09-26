@@ -1,5 +1,6 @@
 {
 	"name":"Techdesk",
+	"versionTenCompatible": 1,
 	"thumbnail":"techdesk.png",
 	"screenshot" : "techdesk-screenshot.jpg",
 	"templateType":"blog",
