@@ -4,38 +4,29 @@
 
 #migrated-site {
 
+
+
+
   // Stylseheet overrides
   // -----------------------------
 
   // Template wrapper (replace with corresponding template classes)
-  .main.wrapper {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-  }
-
-  // Main content spacing (replace with corresponding template class)
-  .main {
+  .wrapper {
     padding: 0;
   }
 
-  // Widget overflow to allow 10S overlays to display correctly
-  .widget.content {
-    overflow: inherit;
-  }
+
 
 
   // Migration styles
   // -----------------------------
 
   // Replace with corresponding template values
-  @container-width: 960px;
+  @container-width: 80%;
+  @spacing__first--desktop: 40px;
+  @spacing__first--tablet:  30px;
+  @spacing--other: 15px;
 
-  @spacing__first--desktop: 0px;
-  @spacing__first--tablet:  0px;
-  @spacing__first--mobile:  0px;
-
-  @spacing--other: 30px;
 
   // Applies spacing to widgets to mimic container width
   .empty-zone,
@@ -46,13 +37,12 @@
     margin-right: auto;
     max-width: @container-width;
     width: 100%;
-  }
 
-  .style--light, .style--dark, .style--accent, .style--background-image {
-    .row__container {
-      width: 90% !important;
+    @media @tablet {
+      max-width: 90%;
     }
   }
+
 
   // Move spacing to first widget in the main zone (not sections)
   &.edit #page-zones__main-overlay + .widget:not(.row),
@@ -62,9 +52,6 @@
     @media @tablet {
       margin-top: @spacing__first--tablet;
     }
-    @media @mobile {
-      margin-top: @spacing__first--mobile;
-    }
   }
 
   // Move spacing to last widget in the main zone (not sections)
@@ -73,9 +60,6 @@
 
     @media @tablet {
       margin-bottom: @spacing__first--tablet;
-    }
-    @media @mobile {
-      margin-bottom: @spacing__first--mobile;
     }
   }
 
@@ -91,11 +75,10 @@
 
   // Adds spacing to the section when a widget is before it
   #page-zones__main > .widget:not(.row) + .row {
-    margin-bottom: @spacing--other;
     margin-top: @spacing--other;
 
-    &:not(:last-child) {
-         margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
