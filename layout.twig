@@ -1,16 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]>
-	<html class="no-js ie6 oldie" lang="en">
-<![endif]-->
-<!--[if IE 7]>
-	<html class="no-js ie7 oldie" lang="en">
-<![endif]-->
-<!--[if IE 8]>
-	<html class="no-js ie8 oldie" lang="en">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-	<html class="no-js" lang="{{ page.seoLang }}">
-<!--<![endif]-->
+<html class="no-js" lang="{{ page.seoLang }}">
+
 <head>
 	<meta charset="utf-8" />
 	<title>{{ page.title }}</title>
@@ -22,6 +12,7 @@
 		<link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
 		<link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
 	{% endif %}
+	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -34,13 +25,14 @@
 	{% endblock %}
 
 	{% include basekit.bodyScript %}
+
 	<script type="text/javascript">
 		! function () {
 		    function supportsSVG() {
 		        return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect
 		    }
 		    if (supportsSVG()) document.documentElement.className += ' svg'
-		}()
+		}();
 	</script>
 </body>
 </html>
